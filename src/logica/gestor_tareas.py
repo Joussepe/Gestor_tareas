@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+#from tkinter import ttk, messagebox
 
 class Tarea:
     def __init__(self, titulo, descripcion):
@@ -17,3 +17,6 @@ class GestorTareas:
             raise ValueError("El título no puede estar vacío")
         tarea = Tarea(titulo, descripcion)
         self.tareas.append(tarea)
+
+    def obtener_tareas(self):
+        return self.tareas
