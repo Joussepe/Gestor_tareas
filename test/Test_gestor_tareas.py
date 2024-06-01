@@ -15,3 +15,7 @@ class TestGestorTareas(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.gestor.agregar_tarea("", "Descripción")
 
+    def test_marcar_completada(self):
+        self.gestor.agregar_tarea("Tarea 1", "Descripción de la tarea 1")
+        self.gestor.marcar_completada(0)
+        self.assertTrue(self.gestor.tareas[0].completada)
