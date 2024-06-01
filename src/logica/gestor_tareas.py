@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+#from tkinter import ttk, messagebox
 
 class Tarea:
     def __init__(self, titulo, descripcion):
